@@ -1,0 +1,181 @@
+# Lesson Plan 1: Data & Analytics Foundations  
+## 5-Day Instruction Plan (10 Hours Total)
+
+**Audience:** First-year college student (likely Economics major)  
+**Format:** 5 days × 2 sessions/day × 1 hour/session  
+**Instruction Mode:** Mixed face-to-face (F2F) and remote/asynchronous  
+**Lesson Goal:** Establish strong data literacy and analytical foundations; prepare the student for future coursework involving statistics, regression, and public-domain economic data.
+
+---
+
+## Lesson Plan 1 Learning Objectives
+
+By the end of Lesson Plan 1, the student should be able to:
+
+- Understand what “data” represents in practical analytical contexts
+- Identify and reason about data types, missing values, and basic data quality issues
+- Work comfortably with tabular data, especially CSV files
+- Understand relational data concepts (tables, primary keys, foreign keys)
+- Write and interpret core SQL queries
+- Reason correctly about aggregation vs disaggregation
+- Use Python/pandas as a “power spreadsheet” for basic analysis
+- Choose appropriate visualizations and interpret results correctly
+- Understand the end-to-end analytics pipeline:  
+  **raw data → structured data → query → visualization → insight**
+
+Advanced topics (statistics, regression, ML, performance tuning, big data systems) are explicitly **out of scope** for Lesson Plan 1.
+
+---
+
+## Tooling (Lesson Plan 1)
+
+- **Spreadsheets:** Google Sheets (preferred), Excel acceptable
+- **Relational Database:** Managed PostgreSQL (e.g., Supabase, Neon)
+- **Query Language:** Core SQL only  
+  - SELECT, WHERE, ORDER BY  
+  - GROUP BY  
+  - INNER JOIN, LEFT JOIN
+- **Python:** pandas for loading, filtering, and aggregating data
+- **Visualization:** One BI tool only (Tableau Public or Power BI Free)
+
+Python is positioned as a **powerful spreadsheet**, not as software engineering.
+
+---
+
+## Day-by-Day Instruction Plan
+
+---
+
+## Day 1 — Data Fundamentals & Mental Models (F2F)
+
+**Day Objective:** Build intuition about data before introducing tools.
+
+### Session 1 (1 hour)
+- What “data” actually is in practice
+- Rows, columns, records, and fields
+- Data types:
+  - Numeric
+  - Categorical
+  - Text
+- Units and scaling
+- Common data quality failures
+
+### Session 2 (1 hour)
+- Missing values:
+  - NULL vs empty vs zero
+- Cardinality:
+  - Low vs high
+  - Why it matters for analysis and visualization
+- CSV as the canonical data mental model
+- Inspecting real CSV files in a spreadsheet
+- Preview of the full analytics pipeline
+
+**Remote / Homework**
+- Inspect multiple CSV files
+- Identify:
+  - Data types
+  - Missing values
+  - Cardinality issues
+- Short written reflections on observed data quality problems
+
+---
+
+## Day 2 — Relational Data & SQL Fundamentals (F2F)
+
+**Day Objective:** Develop relational thinking and introduce SQL as a query language.
+
+### Session 1 (1 hour)
+- Tables as structured representations of entities
+- Primary keys and foreign keys
+- One-to-many relationships
+- Why normalization exists (conceptual motivation only)
+
+**Optional (Conceptual Exposure): Fact Tables vs Dimension Tables**
+- Fact tables represent measurable events or observations (“what happened”)
+- Dimension tables provide descriptive context (“who, what, where, when”)
+- Introduced for intuition only; no formal schema design required
+- This topic may be revisited and expanded in **Lesson Plan 2**
+
+### Session 2 (1 hour)
+- Core SQL concepts:
+  - SELECT
+  - WHERE
+  - ORDER BY
+  - LIMIT
+- Querying a shared PostgreSQL dataset
+- Reading queries top-to-bottom
+- Interpreting result sets
+
+**Remote / Homework**
+- Write basic SELECT queries
+- Apply filters and sorting
+- Answer simple analytical questions using SQL
+
+---
+
+## Day 3 — Joins, Aggregation, and Analytical Reasoning (F2F)
+
+**Day Objective:** Build correct analytical reasoning and avoid common mistakes.
+
+### Session 1 (1 hour)
+- INNER JOIN vs LEFT JOIN
+- Join logic and row multiplication
+- Join cardinality and duplication errors
+- Visual explanation of joins
+- Optional reference to fact/dimension roles when reasoning about joins (expanded in Lesson Plan 2)
+
+### Session 2 (1 hour)
+- GROUP BY
+- Aggregation functions:
+  - COUNT
+  - SUM
+  - AVG
+- Aggregation vs disaggregation
+- Common analytical mistakes
+- Interpreting grouped results correctly
+
+**Remote / Homework**
+- Join fact and dimension-style tables
+- Produce grouped summaries
+- Explain results in plain English (no SQL)
+
+---
+
+## Day 4 — Python as a Power Spreadsheet (Hybrid)
+
+**Day Objective:** Build confidence using Python/pandas for basic analysis.
+
+### Session 1 (1 hour, F2F)
+- Why Python exists in analytics workflows
+- pandas mental model vs spreadsheets vs SQL
+- Loading CSV data
+- Inspecting dataframes
+- Filtering rows
+- Grouping and aggregation
+
+### Session 2 (1 hour, Remote / Guided)
+- Guided notebook exercises:
+  - Load dataset
+  - Clean and filter data
+  - Aggregate results
+  - Export outputs
+- Instructor review (async or live-remote)
+
+---
+
+## Day 5 — Visualization, Interpretation & Synthesis (F2F)
+
+**Day Objective:** Turn mechanics into insight and reinforce end-to-end thinking.
+
+### Session 1 (1 hour)
+- Choosing appropriate chart types
+- Aggregated vs raw visualizations
+- Avoiding misleading visuals
+- What *not* to chart
+- Reading charts critically
+
+### Session 2 (1 hour)
+- BI tool exposure (Tableau Public or Power BI Free)
+- Connect to shared PostgreSQL dataset
+- Build 1–2 simple visuals
+- End-to-end walkthrough:
