@@ -1,2 +1,6 @@
-# data_learning_phase1
-Part of larger data curriculum I'm developing for volunteer 1-1 instruction. This is Lesson Plan 1: teaching someone unfamiliar with data analytics to understand fundamental data and analytics basics.
+# Data analytics curriculum
+Curriculum is created to introduce someone to data analytics, from zero knowledge to enough foudational knowledge to being to learn on their own.
+## Lesson Plan 1: Data and Analytics Foundations
+- Understand the nature of data: formats, data types, driving factors behind transformations
+- Learn basic tooling: spreadsheets, relational tables, basic SQL, basic BI
+- Python data - how to execute a program, panda dataframes
