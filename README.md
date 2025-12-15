@@ -9,6 +9,7 @@ These lessons will use a combination of tasks and examples developed for purpoas
 - SQL-compliant database: SQLite or an administered RDBMS such as MySQL/MariaDB, PostgreSQL, etc.
 - Visual Studio Code with Python and sql extensions.
 - Github.
+- Tableau Public or free Power BI accounts.
 
 ## Lesson Plan 1: Data and Analytics Foundations
 - Understand the nature of data: formats, data types, driving factors behind transformations
