@@ -179,3 +179,29 @@ Python is positioned as a **powerful spreadsheet**, not as software engineering.
 - Connect to shared PostgreSQL dataset
 - Build 1–2 simple visuals
 - End-to-end walkthrough:
+
+
+---
+
+## Post–Lesson Plan 1 Continuation (Remote)
+
+Recommended follow-up work:
+- Additional SQL practice
+- Independent pandas exercises
+- Simple mini-project using the same dataset
+- Periodic check-ins to reinforce concepts
+
+---
+
+## Lesson Plan 1 Completion Criteria
+
+Lesson Plan 1 is considered successful when the student can:
+
+- Explain analytical concepts in plain language
+- Write and interpret basic SQL queries
+- Correctly reason about aggregation
+- Identify common data quality issues
+- Use analytical tools confidently without requiring mastery
+
+The emphasis throughout Lesson Plan 1 is **conceptual clarity over tool depth**.
+
